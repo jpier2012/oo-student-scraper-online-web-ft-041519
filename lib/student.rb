@@ -18,8 +18,11 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    students_array.each do |key, value|
-      self.send("#{key}=", value)
+    students_array.each do |student|
+      student.each do |key, value|
+        self.new.tap do |s|
+          s.send("#{key}=", value)
+        end
     end
   end
 
