@@ -35,4 +35,4 @@ stud_hash = {:name => "Jimmers", :location => "Round Lake", :profile_quote => "'
 
 array = [stud_hash, stud_hash]
 
-stud = Student.create_from_collection
+stud = Student.create_from_collection(array)
