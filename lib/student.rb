@@ -28,6 +28,15 @@ end
 stud_hash = {:name => "Jimmers", :location => "Round Lake", :profile_quote => "'Pikachu' - Pikachu"}
 
 stud = Student.new(stud_hash)
+puts "------------------"
+puts "methods"
+puts "------------------"
 puts stud.methods
+puts "------------------"
+puts "properties"
+puts "------------------"
 puts stud.properties
+puts "------------------"
+puts "attributes"
+puts "------------------"
 puts stud.attributes
