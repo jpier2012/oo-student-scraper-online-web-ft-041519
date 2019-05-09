@@ -23,6 +23,7 @@ class Student
         self.new.tap do |s|
           s.send("#{key}=", value)
         end
+      end
     end
   end
 
