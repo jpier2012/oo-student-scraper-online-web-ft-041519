@@ -5,9 +5,10 @@ class Student
   @@all = []
 
   def initialize(student_hash)
+    binding.pry
     student_hash.each do |key, value|
       self.send("#{key.to_sym}", value)
-      binding.pry
+      
     end
   end
 
