@@ -18,7 +18,9 @@ class Student
   end
 
   def self.create_from_collection(students_array)
+    # iterates through each element of the array
     students_array.each do |student|
+      # iterates through hash key/value pairs
       student.each do |key, value|
         self.new.tap do |s|
           s.send("#{key}=", value)
