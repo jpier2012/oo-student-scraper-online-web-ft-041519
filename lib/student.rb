@@ -9,7 +9,7 @@ class Student
   def initialize(student_hash)
     binding.pry
     student_hash.each do |key, value|
-      self.key = value
+      self.send("#{key}=", value)
     end
   end
 
