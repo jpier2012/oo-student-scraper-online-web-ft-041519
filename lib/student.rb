@@ -26,4 +26,4 @@ end
 
 stud_hash = {:name => "Jimmers", :location => "Round Lake", :profile_quote => "'Pikachu' - Pikachu"}
 
-stud = Student.new(stud_hash)
+stud = Student.new
