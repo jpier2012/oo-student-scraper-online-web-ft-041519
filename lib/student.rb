@@ -33,10 +33,6 @@ puts "methods"
 puts "------------------"
 puts stud.methods
 puts "------------------"
-puts "properties"
-puts "------------------"
-puts stud.properties
-puts "------------------"
 puts "attributes"
 puts "------------------"
 puts stud.attributes
