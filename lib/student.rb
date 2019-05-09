@@ -35,4 +35,4 @@ puts stud.methods
 puts "------------------"
 puts "attributes"
 puts "------------------"
-puts stud.attributes
+puts stud.class.attributes
