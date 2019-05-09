@@ -38,7 +38,7 @@ class Scraper
         else
           student[:blog] = url
         end
-        binding.pry
+        #binding.pry
       end
       student[:profile_quote] = profile.css(".profile-quote").text
       student[:bio] = profile.css(".description-holder p").text
