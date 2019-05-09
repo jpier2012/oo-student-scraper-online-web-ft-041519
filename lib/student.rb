@@ -22,6 +22,7 @@ class Student
     students_array.each do |student|
       # iterates through hash key/value pairs
       student.each do |key, value|
+        # creates a new student, then runs the code block to mass assign attributes
         self.new.tap do |s|
           s.send("#{key}=", value)
         end
