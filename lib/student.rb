@@ -21,7 +21,7 @@ class Student
   end
 
   def self.all
-
+    @@all
   end
 end
 
@@ -29,4 +29,3 @@ stud_hash = {:name => "Jimmers", :location => "Round Lake", :profile_quote => "'
 
 stud = Student.new(stud_hash)
 
-puts stud.class.methods
