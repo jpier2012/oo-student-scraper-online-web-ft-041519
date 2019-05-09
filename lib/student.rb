@@ -18,11 +18,13 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    self.new(Scraper.students)
+    students_array.each do |key, value|
+      self.send("#{key}=", value)
+    end
   end
 
   def add_student_attributes(attributes_hash)
-
+    
   end
 
 end
